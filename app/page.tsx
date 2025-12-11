@@ -9,8 +9,24 @@ export default function Home() {
 
     <main>
       <TopNavbarTrying />
-      <Hero/>
-      <Image src={"/calendardrawing.png"} width={300} height={200} alt={"notsamecalendardrawing"}/>
+      <div className="flex items-center justify-center justify">
+        <Image
+          src="/calendardrawing.png"
+          alt="notsamecalendardrawing" 
+          width={120}
+          height={60}
+          
+          /> 
+        
+          
+
+         </div>
+
+
+      <Hero />
+
+
+
 
     </main>
 

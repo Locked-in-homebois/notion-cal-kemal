@@ -12,7 +12,6 @@ return  (
           className="justify-center"  // all the css parts for the image flex item center and shi 
           
         />
-       
         )
         }
 

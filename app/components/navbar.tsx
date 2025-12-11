@@ -25,9 +25,5 @@ export default function TopNavbarTrying() {
         <Link className="bg-black text-white rounded-[8] px-4 py-2 " href="/">Get Notion Calendar Free</Link>
       </div>
     </nav>
-
-
-
-
   )
 }

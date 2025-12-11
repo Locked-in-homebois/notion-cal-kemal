@@ -1,31 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
-import TopNavbarTrying from "./components/navbar";
 import Imagecaller from "./components/imagecalling";
 import Hero from "./components/hero";
 
 export default function Home() {
   return (
-
-    <main>
-      <TopNavbarTrying />
-      <div className="flex items-center justify-center justify">
+    <main className=" flex flex-col items-center justify-center ">
+      <div className="max-w-[500px] ">
         <Image
           src="/calendardrawing.png"
-          alt="notsamecalendardrawing" 
+          alt="notsamecalendardrawing"
           width={120}
           height={60}
-          
-          /> 
-        
-          
+        />
+        <Hero />
 
-         </div>
-
-
-      <Hero />
-
-
+      </div>
 
 
     </main>

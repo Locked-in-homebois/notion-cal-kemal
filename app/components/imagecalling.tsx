@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function Imagecaller() {
 
 return  (
-
+         
         <Image
           src="/calendardrawing.png"
           width={120}
@@ -12,6 +12,7 @@ return  (
           className="justify-center"  // all the css parts for the image flex item center and shi 
           
         />
+       
         )
         }
 

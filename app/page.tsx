@@ -3,12 +3,16 @@ import Link from "next/link";
 import Imagecaller from "./components/imagecalling";
 import Hero from "./components/hero";
 import Videofmonkey from "./components/videosthing";
+import Firstfirst from "./components/firstcomponent";
 export default function Home() {
   return (
     <main >
       <Hero />
 
-      <Videofmonkey />
+      {/* <Videofmonkey /> */}
+      <Firstfirst />
+
+
 
     </main>
 

@@ -9,44 +9,49 @@ export default function gridcardfirst() {
                         <div className="px-10 pt-5">
                             <Image
                                 src="/cardone/cardone1icon.png"
-                                alt="icon"
+                                alt="icon1"
                                 width={40}
                                 height={40}
                             />
-                            <h1 className="font-bold text-[20px] mt-2">Built-in Scheduling</h1>
-                            <p className="mt-2">Send your availability and scheduling link to let others book time with you.</p>
+                            <h1 className="font-bold text-[20px] ">Built-in Scheduling</h1>
+                            <p className="">Send your availability and scheduling link to let others book time with you.</p>
                         </div>
 
-                        <div className="flex-1 relative w-full min-h-0 mt-5">
+                        <div className="mt-auto px-6">
                             <Image
                                 src="/cardone/cardone1.png"
-                                alt="card1icon2"
-                                fill
-                                className=""
+                                alt="cardone1"
+                                width={500}
+                                height={500}
+                                className="block w-full h-auto object-contain"
                             />
                         </div>
 
                     </div>
-                    <div className="bg-gray-100 rounded-x1 w-full h-full p-5">
+                    <div className="bg-gray-100 rounded-[12px] flex flex-col w-full h-full">
+                        <div className=" px-10 pt-5">
+                            <Image
+                                src="/cardone/cardone2icon.png"
+                                alt="card1icon2"
+                                width={40}
+                                height={40}
+                            />
+                            <h1 className="font-bold text-[20px]"> Work across time zones</h1>
+                            <p>Thoughtfully collaborate with global teams as you visualize your day across time zones. </p>
+                        </div>
+                        <div className="mt-auto px-6">
+                            <Image
+                                src="/cardone/cardone2.png"
+                                alt="cardone2"
+                                width={500}
+                                height={500}
+                                className="block w-full h-auto object-contain"
 
-                        <Image
-                            src="/cardone/cardone2icon.png"
-                            alt="card1icon2"
-                            width={40}
-                            height={40}
-                        />
-                        <h1 className="font-bold text-[20px]"> Work across time zones</h1>
-                        <p>Thoughtfully collaborate with global teams as you visualize your day across time zones. </p>
 
-                        <Image
-                            src="/cardone/cardone2.png"
-                            alt="cardone2"
-                            width={500}
-                            height={500}
-                        />
+                            />    </div>
                     </div>
 
-                    <div className="bg-gray-100 rounded-x1 w-full h-full p-5 ">
+                    <div className="bg-gray-100 rounded-[12px] w-full h-full px-10 pt-5 ">
 
                         <Image
                             src="/cardone/cardone3icon.png"
@@ -67,7 +72,7 @@ export default function gridcardfirst() {
                     </div>
 
 
-                    <div className="bg-gray-100 rounded-x1 w-full h-full p-5">
+                    <div className="bg-gray-100 rounded-[12px] w-full h-full px-10 pt-5">
 
 
                         <Image
@@ -79,7 +84,7 @@ export default function gridcardfirst() {
                         <h1 className="font-bold text-[20px]"> Available in 12 languages </h1>
                         <p>Supports English, Japanese, Korean, French, German, Spanish, Portuguese, Danish, Dutch, Finnish, Norwegian, and Swedish… with more on the way!  </p>
 
-                        <Image
+                        <Image className="py-8"
                             src="/cardone/cardone4.png"
                             alt="cardone4"
                             width={400}
@@ -89,7 +94,7 @@ export default function gridcardfirst() {
 
                 </div>
             </div>
-        </main>
+        </main >
 
 
     )

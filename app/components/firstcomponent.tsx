@@ -9,7 +9,7 @@ export default function Firstfirst() {
 
                 <div className="px-10 py-5 ">
                     <Image className=""
-                        src={"/iconoffirstcomp.png"}
+                        src={"/comp1icon.png"}
                         alt={""}
                         width={50}
                         height={50}
@@ -20,8 +20,8 @@ export default function Firstfirst() {
                 </div>
                 <div className="flex justify-self-center items-center mt-15 rounded-[12]">
                     <Image
-                        src={"/firstfirst.png"}
-                        alt={"the second components first photo"}
+                        src={"/comp1image.png"}
+                        alt={" 1st components first photo"}
                         width={1000}
                         height={750}
                     />

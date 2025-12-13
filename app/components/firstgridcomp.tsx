@@ -5,7 +5,7 @@ export default function gridcardfirst() {
         <main className="flex items-center justify-center py-10 ">
             <div className=" w-[1000px] h-[1000px] bg-white-100 flex ">
                 <div className="grid grid-cols-2 grid-rows-2 gap-5 ">
-                    <div className="bg-gray-100 rounded-[12px] w-full h-full flex flex-col ">
+                    <div className="bg-gray-100 rounded-xl w-full h-full flex flex-col ">
                         <div className="px-10 pt-5">
                             <Image
                                 src="/cardone/cardone1icon.png"
@@ -28,7 +28,7 @@ export default function gridcardfirst() {
                         </div>
 
                     </div>
-                    <div className="bg-gray-100 rounded-[12px] flex flex-col w-full h-full">
+                    <div className="bg-gray-100 rounded-xl flex flex-col w-full h-full">
                         <div className=" px-10 pt-5">
                             <Image
                                 src="/cardone/cardone2icon.png"
@@ -50,7 +50,7 @@ export default function gridcardfirst() {
 
                             />    </div>
                     </div>
-                    <div className="bg-gray-100 rounded-[12px] w-full h-full flex flex-col">
+                    <div className="bg-gray-100 rounded-xl w-full h-full flex flex-col">
                         <div className=" px-10 pt-5"        >
 
                             <Image
@@ -74,7 +74,7 @@ export default function gridcardfirst() {
                     </div>
 
 
-                    <div className="bg-gray-100 rounded-[12px] w-full h-full px-10 pt-5 flex flex-col">
+                    <div className="bg-gray-100 rounded-xl w-full h-full px-10 pt-5 flex flex-col">
 
                         <div className="">
                             <Image

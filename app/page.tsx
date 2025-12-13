@@ -5,7 +5,11 @@ import Hero from "./components/hero";
 import Videofmonkey from "./components/videosthing";
 import Firstfirst from "./components/firstcomponent";
 import Gridcardfirst from "./components/firstgridcomp";
-
+import Secondcomp from "./components/secondcomponent";
+import Gridcardsecond from "./components/secondgripcomponent";
+import Thirdcomp from "./components/thirdcomponet";
+import ThirdGridcomp from "./components/thirdgridcomp";
+import Sixcard from "./components/sixcardscomp";
 export default function Home() {
   return (
     <main >
@@ -14,6 +18,12 @@ export default function Home() {
       <Videofmonkey />
       <Firstfirst />
       <Gridcardfirst />
+      <Secondcomp />
+      <Gridcardsecond />
+      <Thirdcomp />
+      <ThirdGridcomp />
+      <Sixcard />
+
 
 
     </main>

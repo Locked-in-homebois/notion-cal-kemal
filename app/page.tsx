@@ -10,11 +10,14 @@ import Gridcardsecond from "./components/secondgripcomponent";
 import Thirdcomp from "./components/thirdcomponet";
 import ThirdGridcomp from "./components/thirdgridcomp";
 import Sixcard from "./components/sixcardscomp";
+import Lastcomp from "./components/comp4/component4";
+
+
 export default function Home() {
+
   return (
     <main >
       <Hero />
-
       <Videofmonkey />
       <Firstfirst />
       <Gridcardfirst />
@@ -23,7 +26,7 @@ export default function Home() {
       <Thirdcomp />
       <ThirdGridcomp />
       <Sixcard />
-
+      <Lastcomp />
 
 
     </main>

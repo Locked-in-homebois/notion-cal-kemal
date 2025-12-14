@@ -3,7 +3,7 @@ export default function ThirdGridcomp() {
 
     return (
         <main className="flex items-center justify-center py-10 ">
-            <div className=" max-w-[1000px] grid grid-cols-3 gap-5 w-full   ">
+            <div className=" max-w-[1000px] md:grid md:grid-cols-3 flex flex-col gap-5 w-full   ">
                 <div className="bg-gray-100 rounded-xl w-full flex flex-col px-10 pt-5 ">
                     <Image
                         src="/cardone/cardone2icon.png"

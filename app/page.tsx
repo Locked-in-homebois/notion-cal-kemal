@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
-import Imagecaller from "./components/imagecalling";
 import Hero from "./components/hero";
 import Videofmonkey from "./components/videosthing";
 import Firstfirst from "./components/firstcomponent";
@@ -12,11 +9,9 @@ import ThirdGridcomp from "./components/thirdgridcomp";
 import Sixcard from "./components/sixcardscomp";
 import Lastcomp from "./components/comp4/component4";
 
-
 export default function Home() {
-
   return (
-    <main >
+    <main>
       <Hero />
       <Videofmonkey />
       <Firstfirst />
@@ -27,10 +22,6 @@ export default function Home() {
       <ThirdGridcomp />
       <Sixcard />
       <Lastcomp />
-
-
     </main>
-
-
-  )
+  );
 }

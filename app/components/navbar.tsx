@@ -22,6 +22,7 @@ export default function TopNavbarTrying() {
             />
           </div>
         </Link>
+
         <div className="md:flex hidden gap-5 justify-self-center whitespace-nowrap">
           <Link href="/">Mail</Link>
           <Link href="/">Calendar</Link>

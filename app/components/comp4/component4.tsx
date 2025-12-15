@@ -11,18 +11,20 @@ export default function Lastcomp() {
                 href="/"
             >  Get Notion Calendar Free ! </Link>
             <div className="max-w-[1000px] w-full mt-10 grid grid-cols-2 gap-5 ">
-                <div className="bg-gray-100 flex flex-col items-center rounded-2xl ">
-                    <h1 className="font-bold text-2xl p-5">Desktop app</h1>
-                    <Image
-                        src="/comp4image1.png"
-                        alt="comp4-1"
-                        height={400}
-                        width={400}
-                    // sadece linkleri eklemek falan kaldi sakso bir de paragrafi basa sabitlemek
-                    />
+                <div className="bg-gray-100  rounded-2xl ">
+                    <h1 className="font-bold text-xl text-start p-5">Desktop app</h1>
+                    <div className="grid justify-center" >
+                        <Image
+                            src="/comp4image1.png"
+                            alt="comp4-1"
+                            height={400}
+                            width={400}
+                        // sadece linkleri eklemek falan kaldi sakso bir de paragrafi basa sabitlemek
+                        />
+                    </div>
                 </div>
                 <div className="bg-gray-100 rounded-xl flex flex-col items-center ">
-                    <h1 className="font-bold text-2xl flex p-5 "> Mobile App</h1>
+                    <h1 className="font-bold text-xl p-5 "> Mobile App</h1>
                     <Image
                         src="/comp4image2.png"
                         alt="comp4-2"

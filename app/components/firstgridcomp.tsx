@@ -2,7 +2,7 @@ import Image from "next/image"
 export default function gridcardfirst() {
 
     return (
-        <main className="flex items-center justify-center py-10 ">
+        <main className="flex items-center justify-center py-10">
             <div className=" w-[1000px] bg-white-100 flex ">
                 <div className="grid md:grid-cols-2 grid-rows-2 gap-5 ">
                     <div className="bg-gray-100 rounded-xl w-full flex flex-col ">
@@ -45,7 +45,6 @@ export default function gridcardfirst() {
                     </div>
                     <div className="bg-gray-100 rounded-xl w-full flex flex-col">
                         <div className=" px-8 py-2 mt-6"        >
-
                             <Image
                                 src="/cardone/cardone3icon.png"
                                 alt="card1icon3"

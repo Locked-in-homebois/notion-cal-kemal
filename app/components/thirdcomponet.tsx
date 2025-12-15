@@ -2,7 +2,7 @@ import Image from "next/image"
 export default function thirdcomp() {
     return (
         <main className="flex flex-col items-center">
-            <h1 className="font-bold text-[45px] tracking-tighter">Work and life, playing nice. </h1>
+            <h1 className="font-bold text-[45px] text-center tracking-tighter">Work and life, playing nice. </h1>
             <div className=" bg-gray-100  mt-14 justify-center max-w-[1000px] w-full h-auto rounded-xl">
                 <div className="px-10 py-5 ">
                     <Image className=""

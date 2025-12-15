@@ -1,7 +1,15 @@
+'use client'
 import Link from "next/link"
 import Image from "next/image"
+import { Menu, X } from "lucide-react"
+import { useState } from "react"
 export default function TopNavbarTrying() {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => setIsOpen((prev) => !prev)
   return (
+
+
 
     <nav className="sticky top-0 bg-white font-semibold items-center z-50 justify-center gap-8 p-4 shadow-md grid grid-cols-3 ">
       <Link href="/">
@@ -11,13 +19,10 @@ export default function TopNavbarTrying() {
             width={60}
             height={30}
             alt="topleftsymbol" // descrption 8 whatever
-          // all the css parts for the image flex item center and shi         
           />
-
         </div>
-
       </Link>
-      <div className="flex gap-5 justify-self-center whitespace-nowrap">
+      <div className="md:flex hidden gap-5 md:justify-self-center whitespace-nowrap">
         <Link href="/">Mail</Link>
         <Link href="/">Calendar</Link>
         <Link href="/">AI</Link>
@@ -26,10 +31,24 @@ export default function TopNavbarTrying() {
         <Link href="/">Explore</Link>
         <Link href="/">Request A Demo</Link>
       </div>
-      <div className="flex items-center justify-self-end">
-        <Link className="mr-3" href="/">Log in</Link>
-        <Link className="bg-black text-white rounded-[8] px-4 py-2 " href="/">Get Notion Calendar Free</Link>
+      <div className="flex items-center justify-self-end text-[12px] md:col-span-1 col-span-2 gap-3">
+        <Link className="md:flex hidden mr-3" href="/">Log in</Link>
+        <Link className="bg-black text-white rounded-lg px-4 py-2 " href="/">Get Notion Calendar Free</Link>
+        <button onClick={toggleMenu} className={`md:hidden flex transition-transform duration-500 ${isOpen ? "rotate-90" : "rotate-0"}`}>
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
+      {isOpen && (
+        <div className="text-bold text-xl grid gap-3">
+          <Link onClick={() => setIsOpen(false)} href="/">Mail</Link>
+          <Link onClick={() => setIsOpen(false)} href="/">Calendar</Link>
+          <Link onClick={() => setIsOpen(false)} href="/">AI</Link>
+          <Link onClick={() => setIsOpen(false)} href="/">Enterprise</Link>
+          <Link onClick={() => setIsOpen(false)} href="/">Pricing</Link>
+          <Link onClick={() => setIsOpen(false)} href="/">Explore</Link>
+          <Link onClick={() => setIsOpen(false)} href="/">Request A Demo</Link>
+        </div>
+      )}
     </nav>
   )
-}
+}          

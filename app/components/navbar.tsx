@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function TopNavbarTrying() {
   return (
 
-    <nav className="sticky top-0 bg-white font-semibold items-center justify-center gap-8 p-4 shadow-md grid grid-cols-3 ">
+    <nav className="sticky top-0 bg-white font-semibold items-center z-50 justify-center gap-8 p-4 shadow-md grid grid-cols-3 ">
       <Link href="/">
         <div className="flex items-center justify-self-start">
           <Image

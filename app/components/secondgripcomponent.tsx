@@ -23,7 +23,7 @@ export default function Gridcardsecond() {
                         className="mt-auto rounded-xl max-w flex justify-end"
                     />
                 </div>
-                <div className="bg-gray-100 rounded-xl flex flex-col w-full">
+                <div className="bg-gray-100 rounded-xl flex flex-col ">
                     <div className="px-10 py-5">
                         <Image
                             src="/cardtwo/carddtwoicon2.png"

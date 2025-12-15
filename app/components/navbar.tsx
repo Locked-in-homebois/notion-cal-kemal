@@ -6,7 +6,7 @@ import { useState } from "react";
 import { MenuIcon, X } from "lucide-react";
 import { motion, AnimatePresence, type Variants } from "motion/react";
 
-const links = [
+const mlinks = [
   "Notion",
   "Mail",
   "Calendar",
@@ -14,6 +14,17 @@ const links = [
   "Enterprize",
   "Pricing",
   "More",
+];
+
+const dlink = [
+  "Notion",
+  "Mail",
+  "Calendar",
+  "Ai",
+  "Enterprize",
+  "Pricing",
+  "Explore",
+  "Request a Demo",
 ];
 
 const menuVars: Variants = {
@@ -78,13 +89,18 @@ export default function TopNavbarTrying() {
         </Link>
 
         <div className="md:flex hidden gap-5 justify-self-center whitespace-nowrap">
-          <Link href="/">Mail</Link>
+          {/* <Link href="/">Mail</Link>
           <Link href="/">Calendar</Link>
           <Link href="/">AI</Link>
           <Link href="/">Enterprise</Link>
           <Link href="/">Pricing</Link>
           <Link href="/">Explore</Link>
-          <Link href="/">Request A Demo</Link>
+          <Link href="/">Request A Demo</Link> */}
+          {dlink.map((dlink) => (
+            <Link key={dlink} href={"/"}>
+              {dlink}
+            </Link>
+          ))}
         </div>
         <div className="flex gap-3 items-center md:col-span-1 col-span-2 justify-self-end">
           <Link className="hidden md:block" href="/">
@@ -118,10 +134,10 @@ export default function TopNavbarTrying() {
             exit="exit"
             className="fixed font-bold px-5 h-full w-full flex flex-col gap-2 text-[22px] bg-white z-40 "
           >
-            {links.map((link) => (
-              <motion.div key={link} variants={itemVars}>
+            {mlinks.map((mlink) => (
+              <motion.div key={mlink} variants={itemVars}>
                 <Link onClick={() => setIsOpen(false)} href="/">
-                  {link}
+                  {mlink}
                 </Link>
               </motion.div>
             ))}

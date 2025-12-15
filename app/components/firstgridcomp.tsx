@@ -43,7 +43,7 @@ export default function gridcardfirst() {
                     />
                 </div>
                 <div className="bg-gray-100 rounded-xl w-full flex flex-col">
-                    <div className=" px-10 mt-10"        >
+                    <div className=" px-10 py-5 mt-10"        >
                         <Image
                             src="/cardone/cardone3icon.png"
                             alt="card1icon3"

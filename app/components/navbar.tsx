@@ -3,7 +3,61 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { MenuIcon, X, Hamburger } from "lucide-react";
+import { MenuIcon, X } from "lucide-react";
+import { motion, AnimatePresence, type Variants } from "motion/react";
+
+const links = [
+  "Notion",
+  "Mail",
+  "Calendar",
+  "Ai",
+  "Enterprize",
+  "Pricing",
+  "More",
+];
+
+const menuVars: Variants = {
+  initial: {
+    x: "100%",
+  },
+  animate: {
+    x: 0,
+    transition: {
+      duration: 0.3,
+      ease: [0.22, 1, 0.36, 1],
+      staggerChildren: 0.1,
+    },
+  },
+  exit: {
+    x: "100%",
+    transition: {
+      duration: 0.3,
+      staggerChildren: 0.05,
+      staggerDirection: -1,
+    },
+  },
+};
+
+const itemVars: Variants = {
+  initial: {
+    opacity: 0,
+    y: 20,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.2,
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: 20,
+    transition: {
+      duration: 0.1,
+    },
+  },
+};
 
 export default function TopNavbarTrying() {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,35 +104,30 @@ export default function TopNavbarTrying() {
               isOpen ? "rotate-90" : "rotate-0"
             }`}
           >
-            {isOpen ? <X size={24} /> : <Hamburger size={24} />}
+            {isOpen ? <X size={24} /> : <MenuIcon size={24} />}
           </button>
         </div>
       </div>
-      {isOpen && (
-        <div className="fixed font-bold px-5 h-full w-full flex flex-col gap-2 text-[22px] bg-white ">
-          <Link onClick={() => useState(false)} href="/">
-            Notion
-          </Link>
-          <Link onClick={() => useState(false)} href="/">
-            Mail
-          </Link>
-          <Link onClick={() => useState(false)} href="/">
-            Calendar
-          </Link>
-          <Link onClick={() => useState(false)} href="/">
-            AI
-          </Link>
-          <Link onClick={() => useState(false)} href="/">
-            Enterprise
-          </Link>
-          <Link onClick={() => useState(false)} href="/">
-            Pricing
-          </Link>
-          <Link onClick={() => useState(false)} href="/">
-            More
-          </Link>
-        </div>
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            variants={menuVars}
+            layout
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className="fixed font-bold px-5 h-full w-full flex flex-col gap-2 text-[22px] bg-white z-40 "
+          >
+            {links.map((link) => (
+              <motion.div key={link} variants={itemVars}>
+                <Link onClick={() => setIsOpen(false)} href="/">
+                  {link}
+                </Link>
+              </motion.div>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }

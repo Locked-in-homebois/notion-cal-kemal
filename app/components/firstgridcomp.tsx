@@ -3,33 +3,29 @@ export default function gridcardfirst() {
 
     return (
         <main className="flex items-center justify-center py-10 ">
-            <div className=" w-[1000px] h-[1000px] bg-white-100 flex ">
-                <div className="grid grid-cols-2 grid-rows-2 gap-5 ">
-                    <div className="bg-gray-100 rounded-xl w-full h-full flex flex-col ">
-                        <div className="px-10 pt-5">
+            <div className=" w-[1000px] bg-white-100 flex ">
+                <div className="grid md:grid-cols-2 grid-rows-2 gap-5 ">
+                    <div className="bg-gray-100 rounded-xl w-full flex flex-col ">
+                        <div className="px-10 py-5">
                             <Image
                                 src="/cardone/cardone1icon.png"
                                 alt="icon1"
                                 width={40}
                                 height={40}
                             />
-                            <h1 className="font-bold text-[20px] ">Built-in Scheduling</h1>
+                            <h1 className="font-bold text-[20px]">Built-in Scheduling</h1>
                             <p className="">Send your availability and scheduling link to let others book time with you.</p>
                         </div>
-
-                        <div className="mt-auto px-6">
-                            <Image
-                                src="/cardone/cardone1.png"
-                                alt="cardone1"
-                                width={500}
-                                height={500}
-                                className="block w-full h-auto object-contain"
-                            />
-                        </div>
-
+                        <Image
+                            src="/cardone/cardone1.png"
+                            alt="cardone1"
+                            width={500}
+                            height={500}
+                            className="px-6 mt-auto"
+                        />
                     </div>
-                    <div className="bg-gray-100 rounded-xl flex flex-col w-full h-full">
-                        <div className=" px-10 pt-5">
+                    <div className="bg-gray-100 rounded-xl flex flex-col w-full">
+                        <div className=" px-10 py-5">
                             <Image
                                 src="/cardone/cardone2icon.png"
                                 alt="card1icon2"
@@ -39,19 +35,16 @@ export default function gridcardfirst() {
                             <h1 className="font-bold text-[20px]"> Work across time zones</h1>
                             <p>Thoughtfully collaborate with global teams as you visualize your day across time zones. </p>
                         </div>
-                        <div className="mt-auto px-6">
-                            <Image
-                                src="/cardone/cardone2.png"
-                                alt="cardone2"
-                                width={500}
-                                height={500}
-                                className="block w-full h-auto object-contain"
-
-
-                            />    </div>
+                        <Image
+                            src="/cardone/cardone2.png"
+                            alt="cardone2"
+                            width={500}
+                            height={500}
+                            className="mt-auto"
+                        />
                     </div>
-                    <div className="bg-gray-100 rounded-xl w-full h-full flex flex-col">
-                        <div className=" px-10 pt-5"        >
+                    <div className="bg-gray-100 rounded-xl w-full flex flex-col">
+                        <div className=" px-8 py-2 mt-6"        >
 
                             <Image
                                 src="/cardone/cardone3icon.png"
@@ -62,21 +55,16 @@ export default function gridcardfirst() {
                             <h1 className="font-bold text-[20px]"> Modern design </h1>
                             <p>Use command menu and shortcuts for efficient workflows.</p>
                         </div>
-                        <div className="mt-auto px-6">
-                            <Image
-                                src="/cardone/cardone3.png"
-                                alt="cardone3"
-                                width={500}
-                                height={500}
-                                className="block w-full h-auto object-contain"
-                            />
-                        </div>
+                        <Image
+                            src="/cardone/cardone3.png"
+                            alt="cardone3"
+                            width={500}
+                            height={500}
+                            className="rounded-2xl flex mt-16"
+                        />
                     </div>
-
-
-                    <div className="bg-gray-100 rounded-xl w-full h-full px-10 pt-5 flex flex-col">
-
-                        <div className="">
+                    <div className="bg-gray-100 rounded-xl w-full flex flex-col">
+                        <div className="px-10 py-5 ">
                             <Image
                                 src="/cardone/cardone4icon.png"
                                 alt="card1icon4"
@@ -84,21 +72,17 @@ export default function gridcardfirst() {
                                 height={50}
                             />
                             <h1 className="font-bold text-[20px]"> Available in 12 languages </h1>
-                            <p>Supports English, Japanese, Korean, French, German, Spanish, Portuguese, Danish, Dutch, Finnish, Norwegian, and Swedish… with more on the way!  </p>
+                            <p>Supports English, Japanese, Korean, French, German, Spanish, Portuguese, Danish, Dutch, Finnish, Norwegian, and Swedish… with more on the way!</p>
                         </div>
-                        <div className="mt-auto px-6">
-                            <Image className="block w-full h-auto object-contain"
-                                src="/cardone/cardone4.png"
-                                alt="cardone4"
-                                width={400}
-                                height={400}
-                            />
-                        </div>
+                        <Image className="mt-auto"
+                            src="/cardone/cardone4.png"
+                            alt="cardone4"
+                            width={500}
+                            height={500}
+                        />
                     </div>
                 </div>
             </div>
         </main >
-
-
     )
 }

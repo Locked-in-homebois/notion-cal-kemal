@@ -34,7 +34,7 @@ export default function TopNavbarTrying() {
       <div className="flex items-center justify-self-end text-[12px] md:col-span-1 col-span-2 gap-3">
         <Link className="md:flex hidden mr-3" href="/">Log in</Link>
 
-        <Link className={`   text-white rounded-lg px-4 py-2 ${isOpen ? "bg-blue-500" : " bg-black"} `} href="/" >  Get Notion Calendar Free </Link>
+        <Link className={` text-white rounded-lg px-4 py-2 ${isOpen ? "bg-blue-500" : " bg-black"} `} href="/" >  Get Notion Calendar Free </Link>
 
         <button onClick={toggleMenu} className={`md:hidden flex transition-transform duration-500 ${isOpen ? "rotate-90" : "rotate-0"}`}>
           {isOpen ? <X size={24} /> : <Menu size={24} />}

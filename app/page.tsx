@@ -11,7 +11,7 @@ import Thirdcomp from "./components/thirdcomponet";
 import ThirdGridcomp from "./components/thirdgridcomp";
 import Sixcard from "./components/sixcardscomp";
 import Lastcomp from "./components/comp4/component4";
-
+import Lovedbyall from "./components/footer";
 
 export default function Home() {
 
@@ -27,7 +27,7 @@ export default function Home() {
       <ThirdGridcomp />
       <Sixcard />
       <Lastcomp />
-
+      <Lovedbyall />
 
     </main>
 

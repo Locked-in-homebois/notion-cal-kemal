@@ -33,22 +33,26 @@ export default function TopNavbarTrying() {
       </div>
       <div className="flex items-center justify-self-end text-[12px] md:col-span-1 col-span-2 gap-3">
         <Link className="md:flex hidden mr-3" href="/">Log in</Link>
-        <Link className="bg-black text-white rounded-lg px-4 py-2 " href="/">Get Notion Calendar Free</Link>
+
+        <Link className={`   text-white rounded-lg px-4 py-2 ${isOpen ? "bg-blue-500" : " bg-black"} `} href="/" >  Get Notion Calendar Free </Link>
+
         <button onClick={toggleMenu} className={`md:hidden flex transition-transform duration-500 ${isOpen ? "rotate-90" : "rotate-0"}`}>
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
-      {isOpen && (
-        <div className="text-bold text-xl grid gap-3">
-          <Link onClick={() => setIsOpen(false)} href="/">Mail</Link>
-          <Link onClick={() => setIsOpen(false)} href="/">Calendar</Link>
-          <Link onClick={() => setIsOpen(false)} href="/">AI</Link>
-          <Link onClick={() => setIsOpen(false)} href="/">Enterprise</Link>
-          <Link onClick={() => setIsOpen(false)} href="/">Pricing</Link>
-          <Link onClick={() => setIsOpen(false)} href="/">Explore</Link>
-          <Link onClick={() => setIsOpen(false)} href="/">Request A Demo</Link>
-        </div>
-      )}
-    </nav>
+      {
+        isOpen && (
+          <div className="text-bold text-xl grid gap-3">
+            <Link onClick={() => setIsOpen(false)} href="/">Mail</Link>
+            <Link onClick={() => setIsOpen(false)} href="/">Calendar</Link>
+            <Link onClick={() => setIsOpen(false)} href="/">AI</Link>
+            <Link onClick={() => setIsOpen(false)} href="/">Enterprise</Link>
+            <Link onClick={() => setIsOpen(false)} href="/">Pricing</Link>
+            <Link onClick={() => setIsOpen(false)} href="/">Explore</Link>
+            <Link onClick={() => setIsOpen(false)} href="/">Request A Demo</Link>
+          </div>
+        )
+      }
+    </nav >
   )
 }          

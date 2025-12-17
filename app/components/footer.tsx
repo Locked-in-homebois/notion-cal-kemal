@@ -1,11 +1,17 @@
+'use client'
 import Image from "next/image"
 import { Instagram } from "lucide-react"
 import Link from "next/link"
+import { useState } from "react"
 export default function Lovedbyall() {
+
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleMenu = () => setIsOpen((prev) => !prev)
+
 
     return (
 
-        <main>
+        <nav>
 
             <div className="w-full border-t border-gray-600 mt-40">
 
@@ -25,10 +31,23 @@ export default function Lovedbyall() {
                             <Link href="/">  <Instagram />     </Link>
                             <Link href="/">  <Instagram />     </Link>
                         </div>
+                        <button onClick={toggleMenu} className="mt-10">
+                            <button className={`text-center rounded-sm max-w-[150px] border ${isOpen ? "" : "bg-gray-100}"}`}> English "US" ^ </button>
+                        </button>
 
-                        <Link href="/" className="text-center rounded-md max-w-[150px] border mt-10 bg-gray-100 "> English "US" ^ </Link>
+                        {
+                            isOpen && (
+                                <div className="text-bold text-xl grid gap-3">
+                                    <Link onClick={() => setIsOpen(false)} href="/">English</Link>
+                                    <Link onClick={() => setIsOpen(false)} href="/">Turkhis</Link>
+                                    <Link onClick={() => setIsOpen(false)} href="/">Persian</Link>
+                                    <Link onClick={() => setIsOpen(false)} href="/">Arabic</Link>
+                                </div>
+                            )
+                        }
                         <p className="mt-6 text-gray-400 text-sm">Cookie Settings</p>
                         <p className="mt-6 text-gray-400 text-sm">© 2025 Notion Labs, Inc.</p>
+
                     </div>
 
                     <div className="flex flex-col gap-2">
@@ -80,7 +99,7 @@ export default function Lovedbyall() {
 
             </div>
 
-        </main>
+        </nav>
 
 
 

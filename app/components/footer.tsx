@@ -31,17 +31,16 @@ export default function Lovedbyall() {
                             <Link href="/">  <Instagram />     </Link>
                             <Link href="/">  <Instagram />     </Link>
                         </div>
-                        <button onClick={toggleMenu} className="mt-10">
-                            <button className={`text-center rounded-sm max-w-[150px] border ${isOpen ? "" : "bg-gray-100}"}`}> English "US" ^ </button>
-                        </button>
+
+                        <button onClick={toggleMenu} className={`text-center hover:bg-gray-100 rounded-sm max-w-[150px] mt-10 border ${isOpen ? "" : "bg-gray-100}"}`}> English "US" ^ </button>
 
                         {
                             isOpen && (
                                 <div className="text-bold text-xl grid gap-3">
-                                    <Link onClick={() => setIsOpen(false)} href="/">English</Link>
-                                    <Link onClick={() => setIsOpen(false)} href="/">Turkhis</Link>
-                                    <Link onClick={() => setIsOpen(false)} href="/">Persian</Link>
-                                    <Link onClick={() => setIsOpen(false)} href="/">Arabic</Link>
+                                    <Link className="hover:bg-gray-100" onClick={() => setIsOpen(false)} href="/">English</Link>
+                                    <Link className="hover:bg-gray-100" onClick={() => setIsOpen(false)} href="/">Turkhis</Link>
+                                    <Link className="hover:bg-gray-100" onClick={() => setIsOpen(false)} href="/">Persian</Link>
+                                    <Link className="hover:bg-gray-100" onClick={() => setIsOpen(false)} href="/">Arabic</Link>
                                 </div>
                             )
                         }

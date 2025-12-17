@@ -1,10 +1,6 @@
 // code needs to be cleaned up ALOT ABI 
 // everything is fully pushed to the edges on mobile 
 // right now company is next to the notion logo on mobile, needs to be pushed down 
-// 5 ppl, everyone gets the same mark no matter what. 
-// we're missing one more tho idk ima ask himm if h...
-//so were forced to 5 ppl im guessing? or can we do like 4?  good then, we 4 w him  ok im so excited allways xd wait abi wait,,, dont do something that we might regret,. naybe im gone i go to another group, tf are you gonna do then? wait for shit to be finalized then tell him so we dont fck him over, so he has time to look you kniw? at least till the end of this class abi... wait ok? OK? ye ok did you 
-// knk, wait till we know everything, then we tell people. its not a life or death situation is it? we can wait so we are sure right? hmmm ye 
 
 'use client'
 import Image from "next/image"
@@ -17,88 +13,84 @@ export default function Lovedbyall() {
     const toggleMenu = () => setIsOpen((prev) => !prev)
 
     return (
-        <nav>
-            <div className="w-full border-t border-gray-600 mt-40">
-                <div className="grid md:grid-cols-5 grid-cols-2 mt-20">
-                    <div className="grid justify-center ">
-                        <Image
-                            width={200}
-                            src={"/notionfooter.png"}
-                            height={200}
-                            alt="image on footer"
-                        />
-                        <div className="mt-10 flex gap-3 ">
-                            <Link className="hover:bg-gray-300 rounded-xl " href="/">  <Instagram />   </Link>
-                            <Link className="hover:bg-gray-300 rounded-xl " href="/">  <Instagram />   </Link>
-                            <Link className="hover:bg-gray-300 rounded-xl " href="/">  <Instagram />   </Link>
-                            <Link className="hover:bg-gray-300 rounded-xl " href="/">  <Instagram />   </Link>
-                            <Link className="hover:bg-gray-300 rounded-xl " href="/">  <Instagram />   </Link>
-                        </div>
-                        <button onClick={toggleMenu} className={`text-center hover:bg-gray-100 rounded-sm max-w-[150px] mt-10 border ${isOpen ? "" : "bg-gray-100}"}`}> English "US" ^ </button>
-                        {
-                            isOpen && (
-                                <div className="text-bold text-xl grid gap-3">
-                                    <Link className="hover:bg-gray-100" onClick={() => setIsOpen(false)} href="/">English</Link>
-                                    <Link className="hover:bg-gray-100" onClick={() => setIsOpen(false)} href="/">Turkhis</Link>
-                                    <Link className="hover:bg-gray-100" onClick={() => setIsOpen(false)} href="/">Persian</Link>
-                                    <Link className="hover:bg-gray-100" onClick={() => setIsOpen(false)} href="/">Arabic</Link>
-                                </div>
-                            )
-                        }
-                        <p className="mt-6 text-gray-400 text-sm">Cookie Settings</p>
-                        <p className="mt-6 text-gray-400 text-sm">© 2025 Notion Labs, Inc.</p>
+
+        <div className="w-full border-t border-gray-600 mt-40">
+            <div className="grid md:grid-cols-5 grid-cols-2 mt-20">
+                <div className="grid justify-center ">
+                    <Image
+                        width={200}
+                        src={"/notionfooter.png"}
+                        height={200}
+                        alt="image on footer"
+                    />
+                    <div className="mt-10 flex gap-3 ">
+                        <Link className="hover:bg-gray-300 rounded-xl " href="/">  <Instagram />   </Link>
+                        <Link className="hover:bg-gray-300 rounded-xl " href="/">  <Instagram />   </Link>
+                        <Link className="hover:bg-gray-300 rounded-xl " href="/">  <Instagram />   </Link>
+                        <Link className="hover:bg-gray-300 rounded-xl " href="/">  <Instagram />   </Link>
+                        <Link className="hover:bg-gray-300 rounded-xl " href="/">  <Instagram />   </Link>
                     </div>
+                    <button onClick={toggleMenu} className={`text-center  hover:bg-gray-100 rounded-sm max-w-[150px] mt-10 border ${isOpen ? "" : "bg-gray-100}"}`}> English "US" ^ </button>
+                    {
+                        isOpen && (
+                            <div className="text-bold  bottom-full text-xl grid gap-3">
+                                <Link className="hover:bg-gray-100" onClick={() => setIsOpen(false)} href="/">English</Link>
+                                <Link className="hover:bg-gray-100" onClick={() => setIsOpen(false)} href="/">Turkhis</Link>
+                                <Link className="hover:bg-gray-100" onClick={() => setIsOpen(false)} href="/">Persian</Link>
+                                <Link className="hover:bg-gray-100" onClick={() => setIsOpen(false)} href="/">Arabic</Link>
+                            </div>
+                        )
+                    }
+                    <p className="mt-6 text-gray-400 text-sm">Cookie Settings</p>
+                    <p className="mt-6 text-gray-400 text-sm">© 2025 Notion Labs, Inc.</p>
+                </div>
 
-                    <div className="flex flex-col gap-2">
-                        <h1 className="text-lg font-[505]">Company</h1>
-                        <Link className="text-sm text-gray-500 hover:underline" href="/"> About us</Link>
-                        <Link className="text-sm text-gray-500 hover:underline" href="/">Careers</Link>
-                        <Link className="text-sm text-gray-500 hover:underline" href="/"> Security</Link>
-                        <Link className="text-sm text-gray-500 hover:underline" href="/"> Status</Link>
-                        <Link className="text-sm text-gray-500 hover:underline" href="/"> Your privacy rights</Link>
+                <div className="flex flex-col text-gray-500 gap-2">
+                    <h1 className="text-lg font-[505] text-black hover:underline">Company</h1>
+                    <Link className="text-sm  hover:underline" href="/"> About us</Link>
+                    <Link className="text-sm  hover:underline" href="/">Careers</Link>
+                    <Link className="text-sm  hover:underline" href="/"> Security</Link>
+                    <Link className="text-sm  hover:underline" href="/"> Status</Link>
+                    <Link className="text-sm  hover:underline" href="/"> Your privacy rights</Link>
 
-                    </div>
+                </div>
+                <div className="flex flex-col gap-2 text-gray-500">
+                    <h1 className="text-lg font-[505] hover:underline text-black">Download</h1>
+                    <Link className="text-sm hover:underline" href="/">iOS & Android
+                    </Link>
+                    <Link className="text-sm  hover:underline" href="/"> Mac & Windows</Link>
+                    <Link className="text-sm hover:underline" href="/">
+                        Calendar</Link>
+                    <Link className="text-sm  hover:underline" href="/"> Web Clipper</Link>
+                </div>
 
-                    <div className="flex flex-col gap-2 ">
-                        <h1 className="text-lg font-[505]">Download</h1>
-                        <Link className="text-sm text-gray-500 hover:underline" href="/">iOS & Android
-                        </Link>
-                        <Link className="text-sm text-gray-500 hover:underline" href="/"> Mac & Windows</Link>
-                        <Link className="text-sm text-gray-500 hover:underline" href="/">
-                            Calendar</Link>
-                        <Link className="text-sm text-gray-500 hover:underline" href="/"> Web Clipper</Link>
-                    </div>
+                <div className="flex flex-col gap-2 text-sm  text-gray-500 ">
+                    <h1 className="text-lg font-[505] hover:underline text-black">Resources</h1>
+                    <Link className="hover:underline" href="/">Help Center</Link>
+                    <Link className="hover:underline" href="/"> Pricing</Link>
+                    <Link className="hover:underline" href="/"> Blog</Link>
+                    <Link className="hover:underline" href="/">  Community</Link>
+                    <Link className="hover:underline" href="/">Integrations</Link>
+                    <Link className="hover:underline" href="/"> Templates</Link>
+                    <Link className="hover:underline" href="/"> Partner Programs</Link>
+                </div>
 
-                    <div className="flex flex-col gap-2 text-sm text-gray-500 hover:underline">
-                        <h1 className="text-lg font-[505]">Resources</h1>
-                        <Link href="/">Help Center</Link>
-                        <Link href="/"> Pricing</Link>
-                        <Link href="/"> Blog</Link>
-                        <Link href="/">  Community</Link>
-                        <Link href="/">Integrations</Link>
-                        <Link href="/"> Templates</Link>
-                        <Link href="/"> Partner Programs</Link>
-                    </div>
+                <div className="flex flex-col text-gray-500  gap-2">
+                    <h1 className="text-lg font-[505] hover:underline text-black" >Notion For</h1>
+                    <Link className="text-sm hover:underline" href="/"> Enterprise</Link>
 
-                    <div className="flex flex-col gap-2">
-                        <h1 className="text-lg font-[505]">Notion For</h1>
-                        <Link className="text-sm text-gray-500 hover:underline" href="/"> Enterprise</Link>
+                    <Link className="text-sm  hover:underline" href="/"> Small Business</Link>
 
-                        <Link className="text-sm text-gray-500 hover:underline" href="/"> Small Business</Link>
+                    <Link className="text-sm  hover:underline" href="/"> Personal</Link>
 
-                        <Link className="text-sm text-gray-500 hover:underline" href="/"> Personal</Link>
-
-                        <Link className="text-md font-bold hover:underline hover:text-blue-500 mt-10" href="/"> Explore More !!!</Link>
-
-                    </div>
-
+                    <Link className="text-md font-bold hover:underline hover:text-blue-500 mt-10" href="/"> Explore More !!!</Link>
 
                 </div>
 
-
             </div>
 
-        </nav>
+        </div>
+
 
 
 

@@ -1,6 +1,4 @@
-// fix your file and import names / names are okey right now ngl ok
 // on mobile everything is pushed to the edges of the screen, needs fixing 
-// you need to combine the grids with the top parts of the page, like firstfirst and gridcardfirst 
 // you also have the floating boxes left abi 
 
 import Hero from "./components/hero";
@@ -14,14 +12,12 @@ export default function Home() {
   return (
     <main >
       <Hero />
-      <Videofmonkey />
+      {/* <Videofmonkey /> */}
       <Firstfirst />
       <Secondcomp />
       <Thirdcomp />
       <Sixcard />
       <Lastcomp />
     </main>
-
-
   )
 }

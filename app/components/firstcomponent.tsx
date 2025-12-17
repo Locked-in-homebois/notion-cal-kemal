@@ -1,7 +1,7 @@
 import Image from "next/image"
 export default function Firstfirst() {
     return (
-        // this will be the below video
+
         <main className="flex flex-col items-center justify-center">
             <h1 className="font-bold md:text-[42px] text-3xl text-center mt-20">Time Management? Simplified.</h1>
             <div className=" bg-gray-100 mt-24 rounded-xl">
@@ -21,6 +21,10 @@ export default function Firstfirst() {
                     width={1000}
                     height={750}
                 />
+
+
+
+
             </div>
         </main>
     )

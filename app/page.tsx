@@ -1,6 +1,9 @@
+// fix your file and import names 
+// on mobile everything is pushed to the edges of the screen, needs fixing 
+// you need to combine the grids with the top parts of the page, like firstfirst and gridcardfirst 
+
 import Image from "next/image";
 import Link from "next/link";
-import Imagecaller from "./components/imagecalling";
 import Hero from "./components/hero";
 import Videofmonkey from "./components/videosthing";
 import Firstfirst from "./components/firstcomponent";
@@ -27,7 +30,7 @@ export default function Home() {
       <ThirdGridcomp />
       <Sixcard />
       <Lastcomp />
-      <Lovedbyall />
+
 
     </main>
 

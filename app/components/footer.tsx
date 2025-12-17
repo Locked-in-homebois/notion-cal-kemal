@@ -1,3 +1,7 @@
+// code needs to be cleaned up ALOT ABI 
+// everything is fully pushed to the edges on mobile 
+// right now company is next to the notion logo on mobile, needs to be pushed down 
+
 'use client'
 import Image from "next/image"
 import { Instagram } from "lucide-react"
@@ -8,15 +12,10 @@ export default function Lovedbyall() {
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => setIsOpen((prev) => !prev)
 
-
     return (
-
         <nav>
-
             <div className="w-full border-t border-gray-600 mt-40">
-
                 <div className="grid md:grid-cols-5 grid-cols-2 mt-20">
-
                     <div className="grid justify-center ">
                         <Image
                             width={200}
@@ -24,16 +23,14 @@ export default function Lovedbyall() {
                             height={200}
                             alt="image on footer"
                         />
-                        <div className="mt-10 flex gap-3">
-                            <Link href="/">  <Instagram />     </Link>
-                            <Link href="/">  <Instagram />     </Link>
-                            <Link href="/">  <Instagram />     </Link>
-                            <Link href="/">  <Instagram />     </Link>
-                            <Link href="/">  <Instagram />     </Link>
+                        <div className="mt-10 flex gap-3 ">
+                            <Link className="hover:bg-gray-300 rounded-xl " href="/">  <Instagram />   </Link>
+                            <Link className="hover:bg-gray-300 rounded-xl " href="/">  <Instagram />   </Link>
+                            <Link className="hover:bg-gray-300 rounded-xl " href="/">  <Instagram />   </Link>
+                            <Link className="hover:bg-gray-300 rounded-xl " href="/">  <Instagram />   </Link>
+                            <Link className="hover:bg-gray-300 rounded-xl " href="/">  <Instagram />   </Link>
                         </div>
-
                         <button onClick={toggleMenu} className={`text-center hover:bg-gray-100 rounded-sm max-w-[150px] mt-10 border ${isOpen ? "" : "bg-gray-100}"}`}> English "US" ^ </button>
-
                         {
                             isOpen && (
                                 <div className="text-bold text-xl grid gap-3">
@@ -46,7 +43,6 @@ export default function Lovedbyall() {
                         }
                         <p className="mt-6 text-gray-400 text-sm">Cookie Settings</p>
                         <p className="mt-6 text-gray-400 text-sm">© 2025 Notion Labs, Inc.</p>
-
                     </div>
 
                     <div className="flex flex-col gap-2">
@@ -59,7 +55,7 @@ export default function Lovedbyall() {
 
                     </div>
 
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 ">
                         <h1 className="text-lg font-[505]">Download</h1>
                         <Link className="text-sm text-gray-500 hover:underline" href="/">iOS & Android
                         </Link>
@@ -69,15 +65,15 @@ export default function Lovedbyall() {
                         <Link className="text-sm text-gray-500 hover:underline" href="/"> Web Clipper</Link>
                     </div>
 
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 text-sm text-gray-500 hover:underline">
                         <h1 className="text-lg font-[505]">Resources</h1>
-                        <Link className="text-sm text-gray-500 hover:underline" href="/">Help Center</Link>
-                        <Link className="text-sm text-gray-500 hover:underline" href="/"> Pricing</Link>
-                        <Link className="text-sm text-gray-500 hover:underline" href="/"> Blog</Link>
-                        <Link className="text-sm text-gray-500 hover:underline" href="/">  Community</Link>
-                        <Link className="text-sm text-gray-500 hover:underline" href="/">Integrations</Link>
-                        <Link className="text-sm text-gray-500 hover:underline" href="/"> Templates</Link>
-                        <Link className="text-sm text-gray-500 hover:underline" href="/"> Partner Programs</Link>
+                        <Link href="/">Help Center</Link>
+                        <Link href="/"> Pricing</Link>
+                        <Link href="/"> Blog</Link>
+                        <Link href="/">  Community</Link>
+                        <Link href="/">Integrations</Link>
+                        <Link href="/"> Templates</Link>
+                        <Link href="/"> Partner Programs</Link>
                     </div>
 
                     <div className="flex flex-col gap-2">

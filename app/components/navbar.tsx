@@ -1,5 +1,6 @@
 // learn and use "list rendering"
 // when you open the mobile navbar, the whole pages gets moved down, needs to be debugged so its an overlay that doesnt push everything down
+// two words for the thing above: [relative, absolute]
 
 'use client'
 import Link from "next/link"

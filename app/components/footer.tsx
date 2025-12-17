@@ -1,6 +1,10 @@
 // code needs to be cleaned up ALOT ABI 
 // everything is fully pushed to the edges on mobile 
 // right now company is next to the notion logo on mobile, needs to be pushed down 
+// 5 ppl, everyone gets the same mark no matter what. 
+// we're missing one more tho idk ima ask himm if h...
+//so were forced to 5 ppl im guessing? or can we do like 4?  good then, we 4 w him  ok im so excited allways xd wait abi wait,,, dont do something that we might regret,. naybe im gone i go to another group, tf are you gonna do then? wait for shit to be finalized then tell him so we dont fck him over, so he has time to look you kniw? at least till the end of this class abi... wait ok? OK? ye ok did you 
+// knk, wait till we know everything, then we tell people. its not a life or death situation is it? we can wait so we are sure right? hmmm ye 
 
 'use client'
 import Image from "next/image"

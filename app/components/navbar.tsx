@@ -51,7 +51,7 @@ export default function TopNavbarTrying() {
 
               <button className="flex justify-center rounded-2xl bg-blue-500 mt-50">Download App</button>
 
-              <button className="flex justify-center rounded-2xl   bg-blue-400 ">Log In</button>
+              <button className="flex justify-center rounded-2xl bg-blue-400 ">Log In</button>
             </div>
           )
         }

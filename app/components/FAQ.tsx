@@ -19,30 +19,25 @@ export default function Frequestions() {
         <main className="flex flex-col ml-60 mt-40">
             <h1 className="text-5xl max-w-[1000px] font-bold border-b border-gray-300 py-4 flex justify-start ">Questions & answers</h1>
 
-            <div className="grid grid-rows-3 max-w-[1000px] font-bold ">
+            <div className="flex flex-col max-w-[1000px] font-bold ">
                 <div className="border-b items-center border-gray-300 py-4 flex  ">
                     <button > Which calendar provider(s) is Notion Calendar compatible with?   </button>
 
-                    <button onClick={toggleMenu} className={`px-8 flex transition-transform duration-500 ${isOpen ? "rotate-45" : "rotate-0"}`}>
+
+                    <button onClick={toggleMenu} className={`px-8 flex justify-end transition-transform duration-500 ${isOpen ? "rotate-45" : "rotate-0"}`}>
                         {isOpen ? <Plus size={24} /> : <Plus size={20} />}
                     </button>
+                    {
+                        isOpen && (
 
-
+                            <div className="font-medium ">Currently, Notion Calendar integrates and syncs with Google Calendar accounts and Apple iCloud-synced Calendars. Adding support for other calendar providers such as Outlook is on our roadmap.</div>
+                        )
+                    }
                 </div>
-                {
-                    isOpen && (
-
-                        <div className="font-medium ">Currently, Notion Calendar integrates and syncs with Google Calendar accounts and Apple iCloud-synced Calendars. Adding support for other calendar providers such as Outlook is on our roadmap.</div>
-
-
-                    )
-                }
-
-
                 <div className="border-b border-gray-300 py-4 " >
                     <button > Is Notion Calendar available on mobile devices?</button>
 
-                    <button onClick={toggleMenu2} className={`px-8 flex transition-transform duration-500 ${isOpen2 ? "rotate-45" : "rotate-0"}`}>
+                    <button onClick={toggleMenu2} className={`px-8  flex transition-transform duration-500 ${isOpen2 ? "rotate-45" : "rotate-0"}`}>
                         {isOpen2 ? <Plus size={24} /> : <Plus size={20} />}
                     </button>
                     {

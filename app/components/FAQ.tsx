@@ -33,10 +33,10 @@ export default function Frequestions() {
                         )
                     }
                 </div>
-                <div className="border-b flex flex-col border-gray-300 py-4 " >
+                <div onClick={toggleMenu2} className="border-b flex flex-col border-gray-300 py-4 " >
                     <h1 className="max-w-[300px] md:max-w-full" > Is Notion Calendar available on mobile devices?</h1>
 
-                    <button onClick={toggleMenu2} className={`px-8 md:mt-0 mt-4 flex transition-transform absolute right-0 md:mr-50 duration-500 ${isOpen2 ? "rotate-45" : "rotate-0"}`}>
+                    <button className={`px-8 md:mt-0 mt-4 flex transition-transform absolute right-0 md:mr-50 duration-500 ${isOpen2 ? "rotate-45" : "rotate-0"}`}>
                         {isOpen2 ? <Plus size={24} /> : <Plus size={20} />}
                     </button>
                     {
@@ -49,11 +49,11 @@ export default function Frequestions() {
                     }
                 </div>
 
-                <div className="border-b flex-col border-gray-300 flex py-4">
+                <div onClick={toggleMenu3} className="border-b flex-col border-gray-300 flex py-4">
                     <h1 className="max-w-[300px] md:max-w-full"> Does Notion Calendar bring Google Calendar sync to Notion?</h1>
 
 
-                    <button onClick={toggleMenu3} className={`px-8 md:mt-0 mt-4 flex  transition-transform duration-500 absolute right-0 md:mr-50 ${isOpen3 ? "rotate-45" : "rotate-0"}`}>
+                    <button className={`px-8 md:mt-0 mt-4 flex  transition-transform duration-500 absolute right-0 md:mr-50 ${isOpen3 ? "rotate-45" : "rotate-0"}`}>
                         {isOpen3 ? <Plus size={24} /> : <Plus size={20} />}
                     </button>
                     {

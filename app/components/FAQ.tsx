@@ -16,14 +16,14 @@ export default function Frequestions() {
 
 
     return (
-        <main className="flex flex-col ml-60 mt-40 relative">
+        <main className="flex flex-col md:ml-60 ml-6 mt-40 md:px-0 px-6 relative ">
             <h1 className="text-5xl max-w-[1000px] font-bold border-b border-gray-300 py-4 flex justify-start ">Questions & answers</h1>
 
-            <div className="flex flex-col max-w-[1000px] font-bold  ">
+            <div className="flex flex-col max-w-[1000px] font-bold ">
                 <div onClick={toggleMenu} className="border-b  flex flex-col border-gray-300 py-4   ">
-                    <h1 > Which calendar provider(s) is Notion Calendar compatible with?   </h1>
+                    <h1 className="max-w-[300px] md:max-w-[1000px]"> Which calendar provider(s) is Notion Calendar compatible with?   </h1>
 
-                    <button className={`px-8  flex justify-end transition-transform absolute right-0 mr-50 duration-500 ${isOpen ? "rotate-45" : "rotate-0"}`}>
+                    <button className={`px-8  mt-4 md:mt-0 flex justify-end transition-transform absolute right-0 md:mr-50 duration-500 ${isOpen ? "rotate-45" : "rotate-0"}`}>
                         {isOpen ? <Plus size={24} /> : <Plus size={20} />}
                     </button>
                     {
@@ -34,9 +34,9 @@ export default function Frequestions() {
                     }
                 </div>
                 <div className="border-b flex flex-col border-gray-300 py-4 " >
-                    <h1 > Is Notion Calendar available on mobile devices?</h1>
+                    <h1 className="max-w-[300px] md:max-w-full" > Is Notion Calendar available on mobile devices?</h1>
 
-                    <button onClick={toggleMenu2} className={`px-8  flex transition-transform absolute right-0 mr-50 duration-500 ${isOpen2 ? "rotate-45" : "rotate-0"}`}>
+                    <button onClick={toggleMenu2} className={`px-8 md:mt-0 mt-4 flex transition-transform absolute right-0 md:mr-50 duration-500 ${isOpen2 ? "rotate-45" : "rotate-0"}`}>
                         {isOpen2 ? <Plus size={24} /> : <Plus size={20} />}
                     </button>
                     {
@@ -50,10 +50,10 @@ export default function Frequestions() {
                 </div>
 
                 <div className="border-b flex-col border-gray-300 flex py-4">
-                    <h1 className=""> Does Notion Calendar bring Google Calendar sync to Notion?</h1>
+                    <h1 className="max-w-[300px] md:max-w-full"> Does Notion Calendar bring Google Calendar sync to Notion?</h1>
 
 
-                    <button onClick={toggleMenu3} className={`px-8 flex  transition-transform duration-500 absolute right-0 mr-50 ${isOpen3 ? "rotate-45" : "rotate-0"}`}>
+                    <button onClick={toggleMenu3} className={`px-8 md:mt-0 mt-4 flex  transition-transform duration-500 absolute right-0 md:mr-50 ${isOpen3 ? "rotate-45" : "rotate-0"}`}>
                         {isOpen3 ? <Plus size={24} /> : <Plus size={20} />}
                     </button>
                     {

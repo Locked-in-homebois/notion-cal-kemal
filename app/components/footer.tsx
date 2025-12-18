@@ -14,8 +14,8 @@ export default function Lovedbyall() {
 
     return (
         <div className="w-full border-t border-gray-600 mt-40">
-            <div className="grid md:grid-cols-5 grid-cols-2 mt-20">
-                <div className="grid justify-center ">
+            <div className="grid md:grid-cols-5 px-6 gap-4 mt-20">
+                <div className="grid md:col-span-1 col-span-2 justify-start ">
                     <Image
                         width={200}
                         src={"/notionfooter.png"}
@@ -44,7 +44,7 @@ export default function Lovedbyall() {
                     <p className="mt-6 text-gray-400 text-sm">© 2025 Notion Labs, Inc.</p>
                 </div>
 
-                <div className="flex flex-col text-gray-500 gap-2">
+                <div className="flex flex-col  text-gray-500 gap-3 ">
                     <h1 className="text-lg font-[505] text-black hover:underline">Company</h1>
                     <Link className="text-sm  hover:underline" href="/"> About us</Link>
                     <Link className="text-sm  hover:underline" href="/">Careers</Link>
@@ -53,7 +53,7 @@ export default function Lovedbyall() {
                     <Link className="text-sm  hover:underline" href="/"> Your privacy rights</Link>
 
                 </div>
-                <div className="flex flex-col gap-2 text-gray-500">
+                <div className="flex flex-col gap-3 text-gray-500 ">
                     <h1 className="text-lg font-[505] hover:underline text-black">Download</h1>
                     <Link className="text-sm hover:underline" href="/">iOS & Android
                     </Link>
@@ -63,7 +63,7 @@ export default function Lovedbyall() {
                     <Link className="text-sm  hover:underline" href="/"> Web Clipper</Link>
                 </div>
 
-                <div className="flex flex-col gap-2 text-sm  text-gray-500 ">
+                <div className="flex flex-col gap-3 text-sm  text-gray-500 ">
                     <h1 className="text-lg font-[505] hover:underline text-black">Resources</h1>
                     <Link className="hover:underline" href="/">Help Center</Link>
                     <Link className="hover:underline" href="/"> Pricing</Link>
@@ -74,7 +74,7 @@ export default function Lovedbyall() {
                     <Link className="hover:underline" href="/"> Partner Programs</Link>
                 </div>
 
-                <div className="flex flex-col text-gray-500  gap-2">
+                <div className="flex flex-col text-gray-500  gap-3">
                     <h1 className="text-lg font-[505] hover:underline text-black" >Notion For</h1>
                     <Link className="text-sm hover:underline" href="/"> Enterprise</Link>
 
@@ -85,13 +85,8 @@ export default function Lovedbyall() {
                     <Link className="text-md font-bold hover:underline hover:text-blue-500 mt-10" href="/"> Explore More !!!</Link>
 
                 </div>
-
             </div>
-
         </div>
-
-
-
 
     )
 

@@ -33,7 +33,7 @@ export default function Frequestions() {
                         )
                     }
                 </div>
-                <div className="border-b flex border-gray-300 py-4 " >
+                <div className="border-b flex flex-col border-gray-300 py-4 " >
                     <h1 > Is Notion Calendar available on mobile devices?</h1>
 
                     <button onClick={toggleMenu2} className={`px-8  flex transition-transform absolute right-0 mr-50 duration-500 ${isOpen2 ? "rotate-45" : "rotate-0"}`}>
@@ -49,8 +49,8 @@ export default function Frequestions() {
                     }
                 </div>
 
-                <div className="border-b border-gray-300 flex py-4">
-                    <h1 > Does Notion Calendar bring Google Calendar sync to Notion?</h1>
+                <div className="border-b flex-col border-gray-300 flex py-4">
+                    <h1 className=""> Does Notion Calendar bring Google Calendar sync to Notion?</h1>
 
 
                     <button onClick={toggleMenu3} className={`px-8 flex  transition-transform duration-500 absolute right-0 mr-50 ${isOpen3 ? "rotate-45" : "rotate-0"}`}>
@@ -59,7 +59,7 @@ export default function Frequestions() {
                     {
                         isOpen3 && (
 
-                            <div className="font-medium">Notion Calendar allows you to view your Notion database items alongside your Google Calendar events. This offers a streamlined way to see project timelines and task due dates alongside other scheduled events. However, importing Google Calendar events directly into a Notion database is not yet possible. We’re always exploring new ways for Notion and calendars to interact. Expect exciting developments soon!
+                            <div className="font-medium ">Notion Calendar allows you to view your Notion database items alongside your Google Calendar events. This offers a streamlined way to see project timelines and task due dates alongside other scheduled events. However, importing Google Calendar events directly into a Notion database is not yet possible. We’re always exploring new ways for Notion and calendars to interact. Expect exciting developments soon!
 
                             </div>
 

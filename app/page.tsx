@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main >
       <Hero />
-      {/* <Videofmonkey /> */}
+      <Videofmonkey />
       <Firstfirst />
       <Secondcomp />
       <Thirdcomp />

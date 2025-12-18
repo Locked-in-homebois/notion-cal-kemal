@@ -13,7 +13,6 @@ export default function Lovedbyall() {
     const toggleMenu = () => setIsOpen((prev) => !prev)
 
     return (
-
         <div className="w-full border-t border-gray-600 mt-40">
             <div className="grid md:grid-cols-5 grid-cols-2 mt-20">
                 <div className="grid justify-center ">

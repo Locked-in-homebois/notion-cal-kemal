@@ -33,15 +33,15 @@ export default function TopNavbarTrying() {
       </div>
       <div className="flex items-center justify-self-end text-[12px] md:col-span-1 col-span-2 gap-3">
         <Link className="md:flex hidden mr-3" href="/">Log in</Link>
-        <Link className={` text-white rounded-lg px-4 py-2 ${isOpen ? "bg-blue-500" : " bg-black"} `} href="/" >  Get Notion Calendar Free </Link>
-        <button onClick={toggleMenu} className={`md:hidden px-4 flex transition-transform duration-500 ${isOpen ? "rotate-90" : "rotate-0"}`}>
+        <Link className={` text-white rounded-lg px-2 py-2 ${isOpen ? "bg-blue-500" : " bg-black"} `} href="/" >  Get Notion Calendar Free </Link>
+        <button onClick={toggleMenu} className={`md:hidden px-8 flex transition-transform duration-500 ${isOpen ? "rotate-90" : "rotate-0"}`}>
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div >
       <div className="relative ">
         {
           isOpen && (
-            <div className="text-bold text-xl bg-red-500 mt-10 w-[500px] absolute grid gap-3">
+            <div className="text-bold text-xl px-6 py-6 bg-red-500 h-screen w-screen absolute flex flex-col gap-4">
               <Link onClick={() => setIsOpen(false)} href="/">Mail</Link>
               <Link onClick={() => setIsOpen(false)} href="/">Calendar</Link>
               <Link onClick={() => setIsOpen(false)} href="/">AI</Link>
@@ -49,7 +49,13 @@ export default function TopNavbarTrying() {
               <Link onClick={() => setIsOpen(false)} href="/">Pricing</Link>
               <Link onClick={() => setIsOpen(false)} href="/">Explore</Link>
               <Link onClick={() => setIsOpen(false)} href="/">Request A Demo</Link>
+
+              <button className="flex justify-center rounded-2xl bg-blue-500 mt-50">Download App</button>
+
+              <button className="flex justify-center rounded-2xl   bg-blue-400 ">Log In</button>
+
             </div>
+
           )
         }
       </div>

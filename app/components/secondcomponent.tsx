@@ -2,7 +2,7 @@ import Image from "next/image"
 export default function secondcomp() {
 
     return (
-        <main className="flex flex-col justify-center items-center ">
+        <main className="flex flex-col justify-center md:px-0 px-4 items-center ">
             <h1 className="font-bold text-[45px] flex text-center justify-center mt-10 max-w-[480px] tracking-tighter">Fully integrated with your Notion workspace.</h1>
             <div className=" bg-gray-100 mt-16 max-w-[1000px] w-full rounded-xl ">
                 <div className="px-10 py-5  ">

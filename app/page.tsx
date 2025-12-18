@@ -8,6 +8,7 @@ import Secondcomp from "./components/secondcomponent";
 import Thirdcomp from "./components/thirdcomponet";
 import Sixcard from "./components/sixcardscomp";
 import Lastcomp from "./components/comp4/component4";
+import Frequestions from "./components/FAQ";
 export default function Home() {
   return (
     <main >
@@ -18,6 +19,7 @@ export default function Home() {
       <Thirdcomp />
       <Sixcard />
       <Lastcomp />
+      <Frequestions />
     </main>
   )
 }

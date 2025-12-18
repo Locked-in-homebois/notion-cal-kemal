@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Lastcomp() {
     return (
 
-        <main className="flex flex-col items-center md:text-start text-center">
+        <main className="flex flex-col items-center md:px-0 px-4 md:text-start text-center">
             <h1 className="font-bold text-[40px]"> Get Notion Calendar for free. </h1>
             <p className="text-[20px]"> Unlock a better way to manage your time and life. </p>
             <Link

@@ -2,7 +2,7 @@ import Image from "next/image"
 export default function Sixcard() {
 
     return (
-        <main className="flex items-center flex-col justify-center py-10">
+        <main className="flex items-center flex-col justify-center md:px-0 px-4 py-10">
             <h1 className=" tracking-tighter text-center font-bold text-[40px] max-w-[450px]">Designed to work with your favorite tools.</h1>
             <div className=" max-w-[1000px] w-full grid md:grid-cols-3 gap-5 mt-10">
                 <div className="bg-gray-100 rounded-xl flex flex-col w-full py-5 px-10">

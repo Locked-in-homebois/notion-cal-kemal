@@ -4,7 +4,7 @@
 import Image from "next/image"
 export default function Firstfirst() {
     return (
-        <div className="flex flex-col items-center mt-10 justify-center">
+        <div className="flex flex-col items-center mt-10 md:px-0 px-4 justify-center">
             <h1 className="font-bold md:text-[42px] text-3xl text-center mt-20">Time Management? Simplified.</h1>
             <div className=" bg-gray-100 mt-24 rounded-xl">
                 <div className="px-10 py-5 ">

@@ -8,18 +8,20 @@ import Secondcomp from "./components/secondcomponent";
 import Thirdcomp from "./components/thirdcomponet";
 import Sixcard from "./components/sixcardscomp";
 import Lastcomp from "./components/comp4/component4";
-import Frequestions from "./components/FAQ";
+import RealFakin from "./components/faq/realFAQ";
 export default function Home() {
   return (
     <main >
       <Hero />
-      <Videofmonkey />
+      {/* <Videofmonkey /> */}
       <Firstfirst />
       <Secondcomp />
       <Thirdcomp />
       <Sixcard />
       <Lastcomp />
-      <Frequestions />
+      {/* /* <Frequestions /> */}
+      <RealFakin />
+
     </main>
   )
 }

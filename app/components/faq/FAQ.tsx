@@ -1,4 +1,3 @@
-// mobile navbar // 
 'use client'
 import { Plus } from "lucide-react"
 import { useState } from "react"
@@ -16,7 +15,7 @@ export default function Frequestions() {
 
 
     return (
-        <main className="flex flex-col md:ml-60 ml-6 mt-40 md:px-0 px-6 relative ">
+        <main className="grid   mt-40 relative ">
             <h1 className="text-5xl max-w-[1000px] font-bold border-b border-gray-300 py-4 flex justify-start ">Questions & answers</h1>
 
             <div className="flex flex-col max-w-[1000px] font-bold ">

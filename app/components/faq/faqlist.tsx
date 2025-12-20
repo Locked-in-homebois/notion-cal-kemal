@@ -6,24 +6,25 @@ import { useState } from "react"
 interface thePropsProps {
     quesions: string
     answeres: string
+    coloredolores: string
 }
 
-const looperpropertiepart: React.FC<thePropsProps> = ({ quesions, answeres }) => {
+const looperpropertiepart: React.FC<thePropsProps> = ({ quesions, answeres, coloredolores }) => {
 
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => setIsOpen((prev) => !prev);
     return (
 
-        <div className="flex flex-col container justify-center max-w-[1000px]" >
+        <div className={`flex flex-col container transition-colors bg-${coloredolores} justify-center max-w-[1000px]`} >
 
             <button onClick={toggleMenu} className="flex justify-end" >
-                <h1 className="text-lg font-medium">{quesions}</h1>
+                <h1 className={`text-lg font-medium `}>{quesions}</h1>
                 <Plus className={`duration-300  transition-transform ${isOpen ? "rotate-45" : "rotate-0"}`} />
             </button>
 
             {isOpen && (
 
-                <p className="">{answeres}</p>
+                <p className={``}>{answeres}</p>
             )}
         </div>
         // : React.FC<QAItemProps> = ({ question, answer }) => {

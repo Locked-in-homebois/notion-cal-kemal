@@ -1,5 +1,3 @@
-// on mobile everything is pushed to the edges of the screen, needs fixing 
-// you also have the floating boxes left abi 
 
 import Hero from "./components/hero";
 import Videofmonkey from "./components/videosthing";

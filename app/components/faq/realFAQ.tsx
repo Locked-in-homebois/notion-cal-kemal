@@ -8,7 +8,6 @@ const itemlisty = [{
     , textcolores: "white"
 
 },
-
 {
     quesions: "Is Notion Calendar available on mobile devices?"
     , answeres: "Yes, Notion Calendar is available for iPhone and Android devices. We know some users are looking for an optimized version for tablet devices, such as iPad, and are working to make Notion Calendar the best experience on all platforms."
@@ -18,21 +17,16 @@ const itemlisty = [{
 {
     quesions: "Does Notion Calendar bring Google Calendar sync to Notion?"
     , answeres: "Notion Calendar allows you to view your Notion database items alongside your Google Calendar events. This offers a streamlined way to see project timelines and task due dates alongside other scheduled events. However, importing Google Calendar events directly into a Notion database is not yet possible. We’re always exploring new ways for Notion and calendars to interact. Expect exciting developments soon!"
-    , coloredolores: "yellow-500"
+    , coloredolores: "yellow-300"
     , textcolores: "black"
 },
-
-
 
 ]
 // 
 export default function RealFakin() {
 
-
     return (
-
         <div className="flex flex-col items-center mt-20 ">
-
             <div className="max-w-[1000px] w-full">
                 <h1 className="mb-5 text-5xl">Questions & Answers</h1>
 
@@ -46,13 +40,10 @@ export default function RealFakin() {
                     />
 
                 ))
-
-
                 }
             </div>
 
-        </div>
-
+        </div >
     )
 
 

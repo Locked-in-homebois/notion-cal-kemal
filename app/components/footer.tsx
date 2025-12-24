@@ -1,13 +1,11 @@
-// code needs to be cleaned up ALOT ABI 
-// everything is fully pushed to the edges on mobile 
-// right now company is next to the notion logo on mobile, needs to be pushed down 
-
 'use client'
 import Image from "next/image"
 import { Instagram } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 export default function Lovedbyall() {
+
+    const Link2 = ("text-sm  hover:underline")
 
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => setIsOpen((prev) => !prev)
@@ -46,47 +44,47 @@ export default function Lovedbyall() {
 
                 <div className="flex flex-col  text-gray-500 gap-3 ">
                     <h1 className="text-lg font-[505] text-black hover:underline">Company</h1>
-                    <Link className="text-sm  hover:underline" href="/"> About us</Link>
-                    <Link className="text-sm  hover:underline" href="/">Careers</Link>
-                    <Link className="text-sm  hover:underline" href="/"> Security</Link>
-                    <Link className="text-sm  hover:underline" href="/"> Status</Link>
-                    <Link className="text-sm  hover:underline" href="/"> Your privacy rights</Link>
+                    <Link className={Link2} href="/"> About us</Link>
+                    <Link className={Link2} href="/">Careers</Link>
+                    <Link className={Link2} href="/"> Security</Link>
+                    <Link className={Link2} href="/" > Status</Link >
+                    <Link className={Link2} href="/" > Your privacy rights</Link >
 
-                </div>
+                </div >
                 <div className="flex flex-col gap-3 text-gray-500 ">
                     <h1 className="text-lg font-[505] hover:underline text-black">Download</h1>
                     <Link className="text-sm hover:underline" href="/">iOS & Android
                     </Link>
-                    <Link className="text-sm  hover:underline" href="/"> Mac & Windows</Link>
+                    <Link className={Link2} href="/"> Mac & Windows</Link>
                     <Link className="text-sm hover:underline" href="/">
                         Calendar</Link>
-                    <Link className="text-sm  hover:underline" href="/"> Web Clipper</Link>
-                </div>
+                    <Link className={Link2} href="/" > Web Clipper</Link >
+                </div >
 
                 <div className="flex flex-col gap-3 text-sm  text-gray-500 ">
                     <h1 className="text-lg font-[505] hover:underline text-black">Resources</h1>
-                    <Link className="hover:underline" href="/">Help Center</Link>
-                    <Link className="hover:underline" href="/"> Pricing</Link>
-                    <Link className="hover:underline" href="/"> Blog</Link>
-                    <Link className="hover:underline" href="/">  Community</Link>
-                    <Link className="hover:underline" href="/">Integrations</Link>
-                    <Link className="hover:underline" href="/"> Templates</Link>
-                    <Link className="hover:underline" href="/"> Partner Programs</Link>
+                    <Link className={Link2} href="/">Help Center</Link>
+                    <Link className={Link2} href="/"> Pricing</Link>
+                    <Link className={Link2} href="/"> Blog</Link>
+                    <Link className={Link2} href="/">  Community</Link>
+                    <Link className={Link2} href="/">Integrations</Link>
+                    <Link className={Link2} href="/"> Templates</Link>
+                    <Link className={Link2} href="/"> Partner Programs</Link>
                 </div>
 
                 <div className="flex flex-col text-gray-500  gap-3">
                     <h1 className="text-lg font-[505] hover:underline text-black" >Notion For</h1>
                     <Link className="text-sm hover:underline" href="/"> Enterprise</Link>
 
-                    <Link className="text-sm  hover:underline" href="/"> Small Business</Link>
+                    <Link className={Link2} href="/"> Small Business</Link>
 
-                    <Link className="text-sm  hover:underline" href="/"> Personal</Link>
+                    <Link className={Link2} href="/"> Personal</Link>
 
                     <Link className="text-md font-bold hover:underline hover:text-blue-500 mt-10" href="/"> Explore More !!!</Link>
 
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
 
     )
 

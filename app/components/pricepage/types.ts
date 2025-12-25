@@ -1,27 +1,22 @@
-import { LucideIcon, } from "lucide-react";
+import { LucideIcon } from "lucide-react";
 
 export interface cardselements {
-
-    header: string;
-    pricestring: string;
-    pricebelow: string;
-    inbutton: string;
-    justupperbelowboxstring: string;
-    pricenumber: string;
-
+	header: string;
+	pricestring: string;
+	pricebelow: string;
+	inbutton: string;
+	justupperbelowboxstring: string;
+	pricenumber: string;
 }
 
 export interface box {
-
-    header: string;
+	header: string;
 }
 
 export interface belowstringwithcheck {
-
-    desc: string;
+	desc: string;
 }
 
 export interface inboxstringwithcheck {
-
-    desc: string;
+	desc: string;
 }

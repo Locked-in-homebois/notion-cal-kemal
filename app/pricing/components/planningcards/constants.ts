@@ -5,33 +5,35 @@ import { cardselements, box, inboxstringwithcheck, belowstringwithcheck } from "
 export const CARDSELEMENTS_DATA: cardselements[] = [
     {
         header: "Free",
-        price: "  $0 per member/month  ",
+        pricestring: "  per member/month  ",
         pricebelow: "For individuals to organize personal projects and life.",
         inbutton: "Sign up",
-        justupperbelowboxstring: ""
+        justupperbelowboxstring: "",
+        pricenumber: "$0"
     },
     {
         header: "Plus",
-        price: "  $10 per member/month  ",
+        pricestring: " per member/month  ",
         pricebelow: " For small teams and professionals to work together. ",
         inbutton: "Get Started",
-        justupperbelowboxstring: "Everything in Free"
-
+        justupperbelowboxstring: "Everything in Free",
+        pricenumber: "$12"
     },
     {
         header: "Business",
-        price: "  $20 per member/month  ",
+        pricestring: "  per member/month  ",
         pricebelow: "For growing businesses to streamline teamwork.",
         inbutton: "Get Started",
-        justupperbelowboxstring: "Everything in Plus"
+        justupperbelowboxstring: "Everything in Plus",
+        pricenumber: "$24"
     },
     {
         header: "Enterprise",
-        price: "  $? Custom Pricing  ",
+        pricestring: "  Custom Pricing  ",
         pricebelow: "For organizations to operate with scalability, control,and security.",
         inbutton: "CALL US!",
-        justupperbelowboxstring: "Everything in Business"
-
+        justupperbelowboxstring: "Everything in Business",
+        pricenumber: "$?"
     },
 ]
 
@@ -40,64 +42,41 @@ export const INSIDEBOXSRING_DATA: box[] = [
 
     {
         header: " Notion AI ",
-        icon: Brain
     },
-    {
-        header: " Notion AI ",
-        icon: Brain
-    },
-    {
-        header: " Notion AI ",
-        icon: Brain
-    }
-    ,
-    {
-        header: " Notion AI ",
-        icon: Brain
-    }
 ]
 
 export const INBOXSTRINGWITHCHECK_DATA: inboxstringwithcheck[] = [{
     desc: "Trial of Notion AI",
-    icon: Check
 
 },
 {
     desc: "Trial of Notion AI",
-    icon: Check
 
 },
 {
     desc: "Agent",
-    icon: Check
 
 }, {
     desc: "Enterprise search",
-    icon: Check
 
 }, {
     desc: "AI meeting notes",
-    icon: Check
 
 },
 {
     desc: "Agent",
-    icon: Check
 
 },
 {
     desc: "Enterprise search",
-    icon: Check
 
 },
 {
     desc: "AI meeting notes",
-    icon: Check
 
 },
 {
     desc: "Zero data retention with LLM providers",
-    icon: Check
 
 },
 ]
@@ -105,29 +84,85 @@ export const INBOXSTRINGWITHCHECK_DATA: inboxstringwithcheck[] = [{
 export const BELOWSTRINGWITHCHECK_DATA: belowstringwithcheck[] = [
 
     {
-        desc: "",
-        icon: Check
+        desc: "Free for individual usage",
     },
     {
-        desc: "",
-        icon: Check
+        desc: "Basic forms"
+
+        ,
     },
 
     {
-        desc: "",
-        icon: Check
+        desc: "Basic sites",
     },
     {
-        desc: "",
-        icon: Check
+        desc: "Notion Calendar",
     },
     {
-        desc: "",
-        icon: Check
+        desc: "Notion Mail (Syncs with Gmail)",
     },
     {
-        desc: "",
-        icon: Check
+        desc: "Databases including subtasks, dependencies, custom properties and more",
+    },
+    {
+        desc: "Unlimited collaborative blocks",
+    },
+    {
+        desc: "Unlimited file uploads",
+    },
+    {
+        desc: "Unlimited charts",
+    },
+    {
+        desc: "Custom forms",
+    },
+    {
+        desc: "Custom sites",
+    },
+    {
+        desc: "Basic integrations",
+    },
+    {
+        desc: "SAML SSO",
+    },
+    {
+        desc: "Granular database permissions",
+    },
+    {
+        desc: "Verify any page",
+    },
+    {
+        desc: "Private teamspaces",
+    },
+    {
+        desc: "Conditional forms logic",
+    },
+    {
+        desc: "Domain verification",
+    },
+    {
+        desc: "Premium integrations",
+    },
+    {
+        desc: "User provisioning (SCIM)",
+    },
+    {
+        desc: "Advanced security & controls",
+    },
+    {
+        desc: "Audit log",
+    },
+    {
+        desc: "Customer success manager",
+    },
+    {
+        desc: "Security & Compliance integrations (DLP, SIEM)",
+    },
+    {
+        desc: "Domain management",
+    },
+    {
+        desc: "Advanced integrations",
     },
 
 ]

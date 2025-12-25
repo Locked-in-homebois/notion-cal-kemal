@@ -29,7 +29,6 @@ export default function RealFakin() {
         <div className="flex flex-col items-center mt-20 ">
             <div className="max-w-[1000px] w-full">
                 <h1 className="mb-5 text-5xl">Questions & Answers</h1>
-
                 {itemlisty.map((dalgalar, index) => (
                     <Looperpropertiepart
                         key={index}

@@ -1,10 +1,12 @@
 import Hero from "./components/hero/hero";
-
-export default function main() {
+import Cardswithswitch from "./components/planningcards/cards";
+export default function PageOfPricing() {
     return (
 
-        <Hero />
-
+        <main>
+            <Hero />
+            <Cardswithswitch />
+        </main>
     )
 
 }

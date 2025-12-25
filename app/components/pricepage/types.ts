@@ -8,6 +8,7 @@ export interface cardselements {
     inbutton: string;
     justupperbelowboxstring: string;
     pricenumber: string;
+
 }
 
 export interface box {

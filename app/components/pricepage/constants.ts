@@ -10,6 +10,7 @@ export const CARDSELEMENTS_DATA: cardselements[] = [
         inbutton: "Sign up",
         justupperbelowboxstring: "",
         pricenumber: "$0"
+
     },
     {
         header: "Plus",

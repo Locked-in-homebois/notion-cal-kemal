@@ -1,5 +1,5 @@
-import Hero from "./components/hero/hero";
-import Cardswithswitch from "./components/planningcards/cards";
+import Hero from "../components/hero/hero";
+import Cardswithswitch from "../components/pricepage/cards";
 export default function PageOfPricing() {
     return (
 
